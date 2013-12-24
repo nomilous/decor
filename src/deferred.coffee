@@ -1,9 +1,11 @@
 Q = require 'q'
 
-module.exports = (fn) -> ->
+module.exports = (fn) -> (args...) ->
 
     deferral = Q.defer()
 
-    fn.apply @, arguments
+    args.unshift deferral
+
+    fn.apply @, args
 
     return deferral.promise
