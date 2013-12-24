@@ -2,10 +2,18 @@
   "name": "decor",
   "version": "0.0.0",
   "description": "assorted function decorators",
+  "repository": "git@github.com:nomilous/decor.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "q": "~0.9.7"
+  },
+  "devDependencies": {
+    "ipso": "0.0.20",
+    "should": "~2.1.1"
+  }
 }
