@@ -44,6 +44,10 @@ promisingFunction( 'arg1' ).then(
 
 ```
 
+### `decor.Q` 
+
+* onward export of [q](https://github.com/kriskowal/q)
+* so that it doesn't need to be installed twice by npm
 
 
 ### Dev / Test
