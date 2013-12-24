@@ -3,7 +3,7 @@
 describe 'Deferred', -> 
 
 
-    it 'returns a promise when called', 
+    it 'returns the provided function decorated to return a promise when called', 
 
         ipso (Deferred) -> 
 
@@ -37,3 +37,21 @@ describe 'Deferred', ->
                 facto()
 
             fn 1, 2
+
+
+
+    xit 'returns before the function call', 
+
+        ipso (facto, Deferred) -> 
+
+            order = []
+            fn = Deferred (handle) -> order.push 2
+            fn()
+            order.push 1
+
+            order.should.eql [1, 2]
+
+                #
+                # it does not, this could create unexpectednesses
+                # 
+
