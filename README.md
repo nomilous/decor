@@ -1,5 +1,5 @@
-`npm install decor` 0.0.1 <br />
-`component install nomilous/decor` 0.0.1 <br />
+`npm install decor` 0.0.2 <br />
+`component install nomilous/decor` 0.0.2 <br />
 
 decor
 =====

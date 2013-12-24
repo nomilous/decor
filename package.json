@@ -1,6 +1,6 @@
 {
   "name": "decor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "assorted function decorators",
   "repository": "git@github.com:nomilous/decor.git",
   "main": "index.js",

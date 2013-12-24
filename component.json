@@ -2,7 +2,7 @@
   "name": "decor",
   "repo": "nomilous/decor",
   "description": "assorted function decorators",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["decorator","promise"],
   "dependencies": {
     "microjs/q": "*"

@@ -2,7 +2,7 @@
 
 * Added `decor.deferred` 
 
-### 0.0.2 
+### 0.0.2 - 2012/12/24
 
 * Added onward export of q
 

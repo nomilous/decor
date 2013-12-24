@@ -14,7 +14,7 @@ describe 'Decor', ->
 
             Decor.Q.should.equal require 'q'
 
-    it 'exports do', 
+    xit 'exports do', 
 
         ipso (Decor, Do) -> 
 
