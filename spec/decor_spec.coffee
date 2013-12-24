@@ -14,6 +14,12 @@ describe 'Decor', ->
 
             Decor.Q.should.equal require 'q'
 
+    it 'exports do', 
+
+        ipso (Decor, Do) -> 
+
+            Decor.do.should.equal Do
+
 
     context 'examples', -> 
 

@@ -50,7 +50,9 @@ promisingFunction( 'arg1' ).then(
 * so that it doesn't need to be installed twice by npm
 
 
-### Dev / Test
+
+Dev / Test
+----------
 
 ```
 # sudo npm install ipso-cli -g
