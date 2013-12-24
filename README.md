@@ -44,50 +44,13 @@ promisingFunction( 'arg1' ).then(
 
 ```
 
-#### Before and After
-
-**Before**
-
-```coffee
-
-{defer} = require 'q'
-
-fn = (arg1) ->
-
-    deferral = defer()
-
-    doSomethingAsync arg1, (err, res) -> 
-        
-       deferral.resolve res
-
-    return deferral.promise
-
-fn('arg1').then ...
-
-```
-
-**After**
-
-```coffee
-
-{deferred} = require 'decor'
-
-fn = deferred ({resolve, reject}, arg1) -> 
-    
-    doSomethingAsync arg1, (err, res) -> 
-
-        resolve res
-
-fn('arg1').then ...
-
-```
 
 
-
-### Dev
+### Dev / Test
 
 ```
 # sudo npm install ipso-cli -g
+npm install
 ipso -m
 
 ```
