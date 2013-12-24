@@ -1,0 +1,4 @@
+decor
+=====
+
+assorted function decorators
