@@ -2,10 +2,12 @@
 
 describe 'Deferred', -> 
 
-    it 'decorates the function', 
 
-        ipso (Deferred) -> 
 
-            fn = Deferred (arg) -> "returned #{arg}"
-            fn('ARG1').should.equal 'returned ARG1'
+    it 'returns a promise when called', 
 
+        ipso (Deferred, should) -> 
+
+            fn = Deferred ->
+            should.exist fn().then
+            fn().then.should.be.an.instanceof Function
